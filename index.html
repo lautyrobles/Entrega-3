@@ -6,20 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entrega 3</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="header">
+    <header id="header">
         <div class="logo">
-            <img src="/assets/wine.jpg" alt="Link de la imagen">
+            <img src="/assets/logo1.png" alt="Link de la imagen">
         </div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Servicios</a></li>
-                    <li><a href="#">Clientes</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-            </nav>
+        <nav class="navbar">
+            <label for="toggle-menu" class="menu-label">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+            </label>
+            <input type="checkbox" id="toggle-menu">
+            <ul class="nav-links">
+                <li class="list"><a href="#">Inicio</a></li>
+                <li class="list"><a href="#">Servicios</a></li>
+                <li class="list"><a href="#">Clientes</a></li>
+                <li class="list"><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -34,9 +40,64 @@
             </div>            
             <div class="hero-img">
                 <img src="assets/image.avif" alt="Imagen de fondo">    
-            </div>    
+            </div> 
+        </section>
+        <section id="hero2">
+            <div class="title">
+                <h2>Nuestros servicios</h2>
+                <p>Tenemos un catalogo completo sobre la mejor variedad de vinos que podes encontrar en nuesto sitio y te brindamos los beneficios con los que podes contar.</p>
+            </div>
+            <div class="info-card-container">
+                <div class="card">
+                    <img src="assets/botella-y-copa.png" alt="Imagen de botella y copa">
+                    <h2>Variedad</h2>
+                    <p>Encontrarás variedades como: Cabernet Sauvignon, Cabernet Franc, Malbec, Merlot, Tempranillo, Syrah, Bonarda, Verdejo negro <span>entre otras</span>.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/uva-y-copa.png" alt="Imagen de uva y copa">
+                    <h2>Calidad</h2>
+                    <p>Existen mas de 3000 variedades o cepajes de uva para vino en el mundo. Cada una de ellas emplazadas en una diversidad de territorios, suelos, alturas, climas y gente.</p>
+                </div>
+                <div class="card">
+                    <img src="assets/envio.png" alt="Icono de envio">
+                    <h2>Logística</h2>
+                    <p>Contamos con envio gratis a todo el pais y a cada rincon de la region. Al hogar o a tu sucursal mas cercana.</p>
+                </div>
+            </div>   
+        </section>
+        <section id="contact">
+            <div class="contacto">
+                <h2>Contactanos</h2>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Redes Sociales</h3>
+                        <ul class="lista">
+                            <li>WhatsApp: +2634457788</li>
+                            <li>Twitter: @vinotecamendoza</li>
+                            <li>Instagram: @vinotecamendoza</li>
+                            <li>Facebook: Vinoteca Mendoza</li>
+                        </ul>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Sucursales</h3>
+                        <ul class="lista">
+                            <li>Av. Colon 1230, Capital Federal</li>
+                            <li>San Martin 113, Mendoza</li>
+                            <li>Ayacucho 550, Cordoba</li>
+                            <li>Avellaneda 1100, Santa Fe</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+
+    <footer id="footer">
+        <div class="footer-info">
+            <img src="assets/footer-icon.png" alt="Icono del footer">
+            <h5>Vinoteca Mendoza</h5>
+        </div>
+    </footer>
     
 </body>
 </html>

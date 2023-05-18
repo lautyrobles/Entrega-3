@@ -11,27 +11,36 @@ body {
     background-color: rgb(62, 62, 62);
     font-family: 'Nunito', sans-serif;
     padding-top: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    max-width: 100%;
 }
 
 /* barra de navegacion */
 
-.header {
+#header {
     display: flex;
     background-color: rgb(36, 36, 36);
     justify-content: space-between;
     align-items: center;
     height: 90px;
     padding: 5% 10%;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
 }
 
 .logo img {
     display: flex;
-    height: 120px;
-    width: auto;
-    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-links li {
@@ -60,7 +69,6 @@ body {
 #hero {
     background-color: rgb(36, 36, 36);
     font-family: 'Nunito', sans-serif;
-    margin-top: px;
     padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
@@ -68,24 +76,25 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin-top: 5px;
-    border-radius: 10px;
+    margin-top: 1px;
+    border-radius: none;
+    max-width: 100%;
 }
 
 .hero-info  {
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 40%;
     gap: 20px;
-    padding-right: 50px;
-    margin: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .hero-info h2 {
     width: 100%;
     font-size: 30px;
     font-weight: 900;
-    color: white;
+    color: rgb(209, 209, 209);
     text-transform: uppercase;
 }
 
@@ -102,10 +111,11 @@ body {
     justify-content: center;
     align-items: center;
     padding-left: 50px;
+    height: 350px;
 }
 
 .hero-img img {
-    width: 400px;
+    width: 350px;
     border-style: solid;
     border-radius: 1rem;
     border-color: gray;
@@ -117,13 +127,199 @@ body {
 }
 
 .hero-info-link a {
-    color: white;
+    color: rgb(209, 209, 209);
     background:rgb(62, 62, 62);
     padding: 10px;
     border-radius: 10px;
     border: solid 1px;
-
 }
+
+.hero-info-link a:hover {
+    transform: scale(1.1);
+}
+
+#hero2 {
+    background-color: rgb(36, 36, 36);
+    font-family: 'Nunito', sans-serif;
+    margin-top: px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 1px;
+    border-radius: none;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.title h2 {
+    font-size: 30px;
+    color: rgb(209, 209, 209);
+    font-weight: 200;
+}
+
+.title p {
+    width: 55vh;
+    font-size: 15px;
+    font-weight: 450;
+    color: gray;
+}
+
+.info-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(60, 60, 60);
+    width: 250px;
+    height: 250px;
+    border: solid 3px;
+    border-color: rgb(114, 114, 114);
+    border-radius: 1rem;
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    height: 50px;
+}
+
+.card h2 {
+    font-size: 18px;
+    color: rgb(183, 183, 183);
+    padding: 10px;
+    font-weight: 500;
+}
+
+.card p {
+    color: rgb(114, 114, 114);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+#contact {
+    background-color: rgb(36, 36, 36);
+    font-family: 'Nunito', sans-serif;
+    margin-top: px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 1px;
+    border-radius: none;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto h2 {
+    color: rgb(209, 209, 209);
+    font-weight: 200;
+    font-size: 30px;
+}
+
+.contact-info {
+    display: flex;
+    gap: 120px;
+    padding: 20px;
+}
+
+.contact-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.contact-card h3 {
+    font-size: 18px;
+    color: rgb(183, 183, 183);
+    padding: 20px;
+    font-weight: 500;
+}
+
+.lista {
+    list-style-type: circle;
+    color: rgb(114, 114, 114);
+}
+
+#footer {
+    background-color: rgb(36, 36, 36);
+    font-family: 'Nunito', sans-serif;
+    margin-top: px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 1px;
+    margin-bottom: 30px;
+    border-radius: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#footer img {
+    height: 110px;
+    background-color: darkslategray;
+    padding: 5px;
+    border: solid 2px;
+    border-radius: 1rem;
+}
+
+.menu-label {
+    display: none;
+}
+
+#toggle-menu {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

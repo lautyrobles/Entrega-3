@@ -1,0 +1,150 @@
+@media (max-width: 992px) {
+    
+    body {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .logo img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 121px;
+        left: 0%;
+        right: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+
+    .nav-links li {
+        border: 1px solid rgb(62,62,62);
+        padding: 20px 10px;
+    }
+
+    .menu-label {
+        display: flex;
+        order: 2;
+        cursor: pointer;
+    }
+
+    .fa-bars {
+        font-size: 35px;
+        font-weight: 300;
+    }
+
+    .fa-bars:hover {
+        transform: scale(1.2);
+    }
+
+    .navbar > input {
+        display: none;
+    }
+
+    #toggle-menu:checked + .nav-links {
+        display: none;
+    }
+
+    #hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-img {
+        padding: 0px 40px 30px 40px;
+    }
+
+    .hero-info {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 30px 0px 30px;
+    }
+
+    .title h2 {
+        width: 100%;
+    }
+
+    .title p {
+        width: 80%;
+    }
+
+    #hero2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .card {
+        width: 80%;
+        height: auto;
+        gap: 10px;
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px
+    }
+
+    .footer-info {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .footer-info img {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding-top: 30px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .navbar ul {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .nav-links li {
+        background-color: rgb(36, 36, 36);
+        font-size: 14px;
+        width: 250px;
+    }
+
+    .list a {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+} 
+
+@media (max-width: 475px) {
+    .hero-img {
+        display: none;        
+    }
+}
