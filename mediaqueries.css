@@ -44,8 +44,12 @@
         display: none;
     }
 
-    #toggle-menu:checked + .nav-links {
+    .nav-links {
         display: none;
+    }
+
+    #toggle-menu:checked + .nav-links {
+        display: flex;
     }
 
     #hero {
@@ -140,6 +144,14 @@
         display: flex;
         justify-content: center;
         padding: 20px;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    #toggle-menu:checked + .navbar ul {
+        display: flex;
     }
 } 
 
